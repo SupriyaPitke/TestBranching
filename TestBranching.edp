@@ -4,9 +4,9 @@
   <_Project>
     <ProjectName val="TestBranching"/>
     <VCProjectID val="0"/>
-    <VCActive val="N"/>
+    <VCActive val="Y"/>
     <WorkOffline val="N"/>
-    <VCUseGitPlugin val="N"/>
+    <VCUseGitPlugin val="Y"/>
     <SourceDirectory val="Source"/>
     <ExportsDirectory val="Exports"/>
     <GUID val="{AC276227-5C6B-490A-B2C7-B80F5C5D446D}"/>
