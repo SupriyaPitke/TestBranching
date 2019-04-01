@@ -46,6 +46,7 @@
  <DataSourceRepository>
   <DataObjects>
  
+ 
 <DataObject Comment="/* This contains the &quot;tree mode&quot; menu used for these programs */" FolderIsn="4194305" PhysicalName="Menu" Resident="N" UniqueISNConvState="12" data_source="Memory" id="4194305" name="Menu">
 
   <Encrypt val="N"/>
@@ -2850,6 +2851,8 @@
 
   <ObjectType val="T"/>
 
+  <PositionIndex val="-1"/>
+
   <SchemaDoc val="D:\AACurr\Classes\ExamplesFinished\Resources\Addresses.xsd"/>
 
   <RootName val="AddressBook"/>
@@ -3075,6 +3078,8 @@
   <CheckExistence val="D"/>
 
   <ObjectType val="T"/>
+
+  <PositionIndex val="-1"/>
 
   <SchemaDoc val="D:\AACurr\Classes\ExamplesFinished\Resources\Addresses.xsd"/>
 
