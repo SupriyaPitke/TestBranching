@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="14050.00"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+    <UniqueISNConvState val="12"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="SE01_Using Cipher" ISN_2="1" LastIsn="1" id="4194674">
+          <Public val="SE01"/>
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="N"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <ParametersAttributes/>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="O"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <DotNetObjectExists val="N"/>
+          <ToBeMigrated val="Y"/>
+          <LastModified _date="734902" _time="59306" date="03/02/2013" time="16:28:26"/>
+        </Header>
+        <ItemIsn val="8"/>
+        <Resource>
+          <Columns>
+            <Column id="4194305" name="Text to encipher">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <StoredAs id="173" val="33"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="1"/>
+                <Content id="434" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="4194306" name="Algorithm Type">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Range id="98" valUnicode="1-10"/>
+                <Picture id="157" valUnicode="2"/>
+                <GuiDisplay id="158">
+                  <PropertyList model="CTRL_GUI0_COMBOBOX">
+                    <ItemsList id="45" valUnicode="1,2,3,5,6,7,8,9"/>
+                    <DisplayList id="303" valUnicode="BLOW FISH, CAST, DES, RC2, RC4, RC5, DES3, RSA"/>
+                  </PropertyList>
+                </GuiDisplay>
+                <_Dec id="181"/>
+                <_Whole id="182" val="2"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="4194307" name="Key">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <StoredAs id="173" val="33"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="1"/>
+                <Content id="434" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="4194308" name="IV">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <GuiDisplay id="158">
+                  <PropertyList model="CTRL_GUI0_EDIT"/>
+                </GuiDisplay>
+                <StoredAs id="173" val="33"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="1"/>
+                <Content id="434" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="4194309" name="Mode">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="4"/>
+                <GuiDisplay id="158">
+                  <PropertyList model="CTRL_GUI0_COMBOBOX">
+                    <ItemsList id="45" valUnicode="CBC,ECB,CFB,OFB"/>
+                  </PropertyList>
+                </GuiDisplay>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="4"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="4194310" name="Enciphered Text">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <GuiDisplay id="158">
+                  <PropertyList model="CTRL_GUI0_EDIT"/>
+                </GuiDisplay>
+                <StoredAs id="173" val="33"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="1"/>
+                <Content id="434" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="4194311" name="Deciphered Text">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <GuiDisplay id="158">
+                  <PropertyList model="CTRL_GUI0_EDIT"/>
+                </GuiDisplay>
+                <StoredAs id="173" val="33"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="1"/>
+                <Content id="434" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="4194312" name="Last Error">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="200"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="200"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="N"/>
+          <EvaluateEndCondition val="B"/>
+          <InitialMode val="M"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="R"/>
+            <LockingStrategy val="M"/>
+            <CacheStrategy val="D"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="D"/>
+            <TransactionBegin val="P"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="N"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="Y"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="Y"/>
+            <AllowCreate val="Y"/>
+            <AllowDelete val="Y"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="Y"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="Y"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <TaskLogic>
+          <LogicUnit id="4194306" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="4194306" Type="M">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4194307">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4194305" FlowIsn="4194308" id="4194305">
+                  <ASS val="4194308"/>
+                  <Column val="4194305"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="10"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4194306" FlowIsn="4194309" id="4194306">
+                  <ASS val="4194310"/>
+                  <Column val="4194306"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <INT_RCMP_INFO>
+                    <v>4194310</v>
+                    <v>4194312</v>
+                  </INT_RCMP_INFO>
+                  <INT_DIT_INFO>
+                    <v>4194308</v>
+                    <v>4194309</v>
+                    <v>4194310</v>
+                    <v>4194316</v>
+                  </INT_DIT_INFO>
+                  <_DitIndexForToolkit val="11"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4194307" FlowIsn="4194310" id="4194307">
+                  <ASS val="4194311"/>
+                  <Column val="4194307"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <INT_DIT_INFO>
+                    <v>4194317</v>
+                  </INT_DIT_INFO>
+                  <_DitIndexForToolkit val="3"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4194308" FlowIsn="4194311" id="4194308">
+                  <ASS val="4194312"/>
+                  <Column val="4194308"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="4"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4194309" FlowIsn="4194312" id="4194309">
+                  <ASS val="4194313"/>
+                  <Column val="4194309"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="12"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4194310" FlowIsn="4194313" id="4194310">
+                  <Column val="4194310"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="17"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4194311" FlowIsn="4194314" id="4194311">
+                  <Column val="4194311"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="19"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4194315">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4194312" FlowIsn="4194316" id="4194312">
+                  <Column val="4194312"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="15"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4194307" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="T"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="4194305"/>
+            </Event>
+            <TXT val="Encipher"/>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="4194317">
+                  <FieldID val="4194310"/>
+                  <WithValue val="4194306"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194318">
+                  <FieldID val="4194311"/>
+                  <WithValue val="4194306"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4194319">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4194320">
+                  <Type val="2"/>
+                  <Text val="Encrypt the data"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="4194329" EndBlockSegment="4194323" FlowIsn="4194321" Type="I">
+                  <Condition Exp="4194315"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194322">
+                  <FieldID val="4194310"/>
+                  <WithValue val="4194316"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="4194329" EndBlockSegment="4194325" FlowIsn="4194323" Type="E">
+                  <Condition Exp="4194318"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194324">
+                  <FieldID val="4194310"/>
+                  <WithValue val="4194319"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="4194329" EndBlockSegment="4194327" FlowIsn="4194325" Type="E">
+                  <Condition Exp="4194321"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194326">
+                  <FieldID val="4194310"/>
+                  <WithValue val="4194322"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="4194329" EndBlockSegment="4194329" FlowIsn="4194327" Type="E">
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194328">
+                  <FieldID val="4194310"/>
+                  <WithValue val="4194324"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="4194329"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4194330">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4194331">
+                  <Type val="2"/>
+                  <Text val="Fetch the last error message, or blank it out"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194332">
+                  <FieldID val="4194312"/>
+                  <WithValue val="4194306"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194333">
+                  <FieldID val="4194312"/>
+                  <WithValue val="4194307"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4194334">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="4194351" EndBlockSegment="4194351" FlowIsn="4194335" Type="I">
+                  <Condition Exp="4194326"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4194336">
+                  <Type val="2"/>
+                  <Text val="Decrypt the data"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="4194345" EndBlockSegment="4194339" FlowIsn="4194337" Type="I">
+                  <Condition Exp="4194315"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194338">
+                  <FieldID val="4194311"/>
+                  <WithValue val="4194317"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="4194345" EndBlockSegment="4194341" FlowIsn="4194339" Type="E">
+                  <Condition Exp="4194318"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194340">
+                  <FieldID val="4194311"/>
+                  <WithValue val="4194320"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="4194345" EndBlockSegment="4194343" FlowIsn="4194341" Type="E">
+                  <Condition Exp="4194321"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194342">
+                  <FieldID val="4194311"/>
+                  <WithValue val="4194323"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="4194345" EndBlockSegment="4194345" FlowIsn="4194343" Type="E">
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194344">
+                  <FieldID val="4194311"/>
+                  <WithValue val="4194325"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="4194345"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4194346">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4194347">
+                  <Type val="2"/>
+                  <Text val="Fetch the last error message, or blank it out"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194348">
+                  <FieldID val="4194312"/>
+                  <WithValue val="4194306"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="4194349">
+                  <FieldID val="4194312"/>
+                  <WithValue val="4194307"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4194350">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="4194351"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="4194352">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry _last_isn="19" _last_test_id="68" id="1">
+            <PropertyList model="FORM_GUI0">
+              <X id="21" val="1"/>
+              <Y id="22" val="1"/>
+              <Width id="23" val="515"/>
+              <Height id="24" val="248"/>
+              <ShowGrid id="37"/>
+              <GridX id="38" val="2"/>
+              <GridY id="39" val="2"/>
+              <BorderStyle id="64" val="1"/>
+              <_Comment id="218"/>
+              <FormName Exp="4194305" id="311" valUnicode="SE01_Using Cipher"/>
+              <_TabbingOrder id="318" val="1"/>
+              <PersistentFormState id="493"/>
+            </PropertyList>
+            <Control _test_id="64" id="4194305">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Type:"/>
+                <X id="21" val="10"/>
+                <Y id="22" val="80"/>
+                <Width id="23" val="27"/>
+                <Height id="24" val="10"/>
+                <Font id="50" val="1"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="51" id="4194306">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Key:"/>
+                <X id="21" val="10"/>
+                <Y id="22" val="96"/>
+                <Width id="23" val="27"/>
+                <Height id="24" val="10"/>
+                <Font id="50" val="1"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="60" id="4194307">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="4194307"/>
+                </Model>
+                <X id="21" val="41"/>
+                <Y id="22" val="96"/>
+                <Width id="23" val="157"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="4194307" id="43"/>
+                <ControlName id="46" val="Key"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <AllowCRInData id="74" val="Y"/>
+                <PasswordEdit id="85"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="3"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="66" id="4194308">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="4194308"/>
+                </Model>
+                <X id="21" val="41"/>
+                <Y id="22" val="111"/>
+                <Width id="23" val="157"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="4194308" id="43"/>
+                <ControlName id="46" val="IV"/>
+                <Enabled Exp="4194314" id="62"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <AllowCRInData id="74" val="Y"/>
+                <PasswordEdit id="85"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="4"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="67" id="4194309">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="IV"/>
+                <X id="21" val="10"/>
+                <Y id="22" val="112"/>
+                <Width id="23" val="27"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="1"/>
+                <Enabled Exp="4194314" id="62"/>
+                <Style id="63" val="7"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="68" id="4194310">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Mode:"/>
+                <X id="21" val="10"/>
+                <Y id="22" val="128"/>
+                <Width id="23" val="27"/>
+                <Height id="24" val="10"/>
+                <Font id="50" val="1"/>
+                <Enabled Exp="4194314" id="62"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="38" id="4194311">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19"/>
+                <X id="21" val="211"/>
+                <Y id="22" val="7"/>
+                <Width id="23" val="292"/>
+                <Height id="24" val="142"/>
+                <Color id="51" val="14"/>
+                <Style id="63" val="5"/>
+                <StaticType id="70" val="128"/>
+                <MultiLine id="71"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="4194311" _test_id="37" id="4194312">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}&#xD;&#xA;{\colortbl ;\red0\green0\blue0;\red255\green0\blue128;}&#xD;&#xA;{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\ltrpar\cf1\b\f0\fs20 There are many good cipher algorithms available now, and while writing applications you may need to use these to send, receive, or store data.\par&#xD;&#xA;\par&#xD;&#xA;The\cf2  Cipher()\cf1  and \cf2 Decipher() \cf1 functions in Magic provide built-in support for this. \par&#xD;&#xA;\par&#xD;&#xA;To use this example:\par&#xD;&#xA;\par&#xD;&#xA;1. Enter some Text to encipher.\par&#xD;&#xA;2. Enter a key, which must be at least 5 characters long.\par&#xD;&#xA;3. Press \cf2 Execute\cf1 . The text will be enciphered and deciphered (and shown in the Enciphered and Deciphered text box).\par&#xD;&#xA;\par&#xD;&#xA;Error messages, if any, show in the Errors box. Note that entering the wrong Key is not an error.\par&#xD;&#xA;}&#xD;&#xA;"/>
+                <X id="21" val="219"/>
+                <Y id="22" val="12"/>
+                <Width id="23" val="275"/>
+                <Height id="24" val="131"/>
+                <Color id="51" val="14"/>
+                <Style id="63" val="1"/>
+                <EnableRTF id="69" val="Y"/>
+                <MultiLine id="71"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+                <Border id="452"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="40" id="4194313">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Text to encipher"/>
+                <X id="21" val="9"/>
+                <Y id="22" val="8"/>
+                <Width id="23" val="192"/>
+                <Height id="24" val="68"/>
+                <Style id="63" val="5"/>
+                <StaticType id="70" val="128"/>
+                <MultiLine id="71"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="4194313" PDOD="128" _test_id="48" id="4194314">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="4194305"/>
+                </Model>
+                <X id="21" val="16"/>
+                <Y id="22" val="18"/>
+                <Width id="23" val="179"/>
+                <Height id="24" val="50"/>
+                <Data FieldID="4194305" id="43"/>
+                <Style id="63" val="1"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <VerticalScroll id="73"/>
+                <AllowCRInData id="74" val="Y"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="1"/>
+                <Border id="452"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="1" _test_id="63" id="4194315">
+              <PropertyList model="CTRL_GUI0_COMBOBOX">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="4194306"/>
+                </Model>
+                <X id="21" val="41"/>
+                <Y id="22" val="80"/>
+                <Width id="23" val="157"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="4194306" id="43"/>
+                <ControlName id="46" val="Algorithm Type"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="2"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="65" id="4194316">
+              <PropertyList model="CTRL_GUI0_COMBOBOX">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="4194309"/>
+                </Model>
+                <X id="21" val="41"/>
+                <Y id="22" val="128"/>
+                <Width id="23" val="48"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="4194309" id="43"/>
+                <ControlName id="46" val="Mode"/>
+                <Enabled Exp="4194314" id="62"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="5"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="47" id="4194317">
+              <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+                <X id="21" val="152"/>
+                <Y id="22" val="144"/>
+                <Width id="23" val="46"/>
+                <Height id="24" val="13"/>
+                <ControlName id="46" val="Encipher"/>
+                <Enabled Exp="4194309" id="62"/>
+                <Format id="82" valUnicode="Execute"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="4194305"/>
+                </RaiseEvent>
+                <TabOrder id="314" val="6"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="62" id="4194318">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Errors"/>
+                <X id="21" val="13"/>
+                <Y id="22" val="161"/>
+                <Width id="23" val="192"/>
+                <Height id="24" val="68"/>
+                <Style id="63" val="5"/>
+                <StaticType id="70" val="128"/>
+                <MultiLine id="71"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="4194318" _test_id="59" id="4194319">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="4194312"/>
+                </Model>
+                <X id="21" val="20"/>
+                <Y id="22" val="171"/>
+                <Width id="23" val="177"/>
+                <Height id="24" val="50"/>
+                <Data FieldID="4194312" id="43"/>
+                <ControlName id="46" val="Last Error"/>
+                <Style id="63" val="1"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <VerticalScroll id="73"/>
+                <AllowCRInData id="74" val="Y"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="7"/>
+                <Border id="452"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="54" id="4194320">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Enciphered text"/>
+                <X id="21" val="211"/>
+                <Y id="22" val="161"/>
+                <Width id="23" val="140"/>
+                <Height id="24" val="68"/>
+                <Style id="63" val="5"/>
+                <StaticType id="70" val="128"/>
+                <MultiLine id="71"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="4194320" PDOD="128" _test_id="55" id="4194321">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="4194310"/>
+                </Model>
+                <X id="21" val="217"/>
+                <Y id="22" val="171"/>
+                <Width id="23" val="128"/>
+                <Height id="24" val="50"/>
+                <Data FieldID="4194310" id="43"/>
+                <ControlName id="46"/>
+                <Modifiable id="53"/>
+                <Style id="63" val="1"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <VerticalScroll id="73"/>
+                <AllowCRInData id="74" val="Y"/>
+                <PasswordEdit id="85"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="8"/>
+                <Border id="452"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="56" id="4194322">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Deciphered text"/>
+                <X id="21" val="363"/>
+                <Y id="22" val="161"/>
+                <Width id="23" val="140"/>
+                <Height id="24" val="68"/>
+                <Style id="63" val="5"/>
+                <StaticType id="70" val="128"/>
+                <MultiLine id="71"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="4194322" PDOD="128" _test_id="57" id="4194323">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="4194311"/>
+                </Model>
+                <X id="21" val="367"/>
+                <Y id="22" val="171"/>
+                <Width id="23" val="128"/>
+                <Height id="24" val="50"/>
+                <Data FieldID="4194311" id="43"/>
+                <ControlName id="46"/>
+                <Modifiable id="53"/>
+                <Style id="63" val="1"/>
+                <MultiLineEdit id="71" val="Y"/>
+                <VerticalScroll id="73"/>
+                <AllowCRInData id="74" val="Y"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="9"/>
+                <Border id="452"/>
+              </PropertyList>
+            </Control>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="4194305">
+            <ExpSyntax val="'SE01_How Do I Encrypt And Decrypt Data?'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="4194306">
+            <ExpSyntax val="''"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="4194307">
+            <ExpSyntax val="EncryptionError()"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="4194308">
+            <ExpSyntax val="'TOP SECRET: Please read this message and then destroy'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="4194309">
+            <ExpSyntax val="Len(Trim({0,4194307}))>=5"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="4194310">
+            <ExpSyntax val="1"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="4194311">
+            <ExpSyntax val="IF ({0,4194306}=8,&#xD;&#xA;      '1111111111111111',&#xD;&#xA;    IF ({0,4194306}=9,&#xD;&#xA;          '&lt;RSAKeyValue>&lt;Modulus>ofVQH6pGN95DOmBY94f7XLObK6EZjQmitT0QDNZs4VNVN99TwtCuRKgy5/fJWxTCOAU13DurMetkSBGa8wb0Sf5cwpF0F0QfAgve0nrEWprHH5Y2ZEn+2ZRKMZxYFVaeKfYEjFVD4uW0EEHPz8iKf7NGY8ZPXGaNshdyUtMjJDM=&lt;/Modulus>&lt;Exponent>AQAB&lt;/Exponent>&lt;P>z24KErlUoIbNhSPzFL+plxXkmcDNUw1ZqPY+b5XHWZ3RLtxWwoia8UkNbrbeuin0zIH30K6JA9hkJ+0c1sAmCQ==&lt;/P>&lt;Q>x+GSWD3uazXN15kkbIop5WJhFFDPWEhsdd5M+hV0Cjkjd2K0Haws3mvoZPA0OoJMZLQXloR0g5qYv51TY0hnWw==&lt;/Q>&lt;DP>Yrp0Tu8pKXKf9YPj2fdTp9bCxK+wypvrFfGGTCQVC0GDY/N51AOjA78KhqzBnAgGPSSLKCc6jbr8CMjh1hEEyQ==&lt;/DP>&lt;DQ>UWSCklpNvux+8L9UvLoaS2UfQQWTGVEMkYa/c8rOoOcZkSDpVXfqIXxxesDxk63Ba/SF8m3ngDuw3b4z2ab/Jw==&lt;/DQ>&lt;InverseQ>raLQKhbsYTHEd6Y/aOBiGUAc11EG7B7I1TKvWmvsLWGhhaFC9nZ7ndJF1ASCPlWYBFt/wEqMgUBXAQJO6lC5FA==&lt;/InverseQ>&lt;D>CFw4aZoJi+K+R6onjYeIcy2WSfdD8WLY8lAXnwIGls8NbBfsI/dPt52TGyRQUZJNwESMljTCTo5fG9VE0Vy/iWlAZYLBGNdcRP6vWA5+w7DN0zPHikJnaei7TPv6rjl5DQh0Io2fXP+SrpOXKMArDcD7BM/wD/mmUEoLx0et9rE=&lt;/D>&lt;/RSAKeyValue>',&#xD;&#xA;          '11111111'&#xD;&#xA;       )&#xD;&#xA;    )"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="4194312">
+            <ExpSyntax val="'This is my Test IV'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="4194313">
+            <ExpSyntax val="IF ({0,4194306}&lt;>8,'CBC','CBC3')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="4194314">
+            <ExpSyntax val="{0,4194306}&lt;>6 AND {0,4194306}&lt;>9"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="4194315">
+            <ExpSyntax val="{0,4194306}=6"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="4194316">
+            <ExpSyntax val="Cipher (6,{0,4194305},{0,4194307})"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="4194317">
+            <ExpSyntax val="DeCipher (6,{0,4194310},{0,4194307})"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="4194318">
+            <ExpSyntax val="{0,4194306}=8"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="4194319">
+            <ExpSyntax val="Cipher (8,{0,4194305},{0,4194307},Trim ({0,4194309}),{0,4194308})"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="4194320">
+            <ExpSyntax val="DeCipher (8,{0,4194310},{0,4194307},Trim ({0,4194309}),{0,4194308})"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="4194321">
+            <ExpSyntax val="{0,4194306}=9"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="4194322">
+            <ExpSyntax val="Cipher (9,{0,4194305},{0,4194307})"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="4194323">
+            <ExpSyntax val="DeCipher (9,{0,4194310},{0,4194307})"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="4194324">
+            <ExpSyntax val="Cipher ({0,4194306},{0,4194305},{0,4194307},Trim ({0,4194309}),{0,4194308})"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="4194325">
+            <ExpSyntax val="DeCipher ({0,4194306},{0,4194310},{0,4194307},Trim ({0,4194309}),{0,4194308})"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="4194326">
+            <ExpSyntax val="NOT ISNULL ({0,4194310})"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+        </Expressions>
+        <EVNT DESC="Start" FORCE_EXIT="E" id="4194305">
+          <Event>
+            <EventType val="N"/>
+            <PublicObject comp="-1"/>
+          </Event>
+        </EVNT>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>
